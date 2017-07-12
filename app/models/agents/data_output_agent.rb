@@ -175,7 +175,7 @@ module Agents
       namespaces = ['xmlns:atom="http://www.w3.org/2005/Atom"']
 
       if (boolify(interpolated['ns_media']))
-        namespaces << 'xmlns:media="http://search.yahoo.com/mrss/"'
+        namespaces << 'xmlns:media="http://search.yahoo.com/mrss/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"'
       end
       if (boolify(interpolated['ns_itunes']))
         namespaces << 'xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"'
