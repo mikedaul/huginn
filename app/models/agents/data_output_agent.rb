@@ -172,7 +172,7 @@ module Agents
     end
 
     def xml_namespace
-      namespaces = ['xmlns:atom="http://www.w3.org/2005/Atom"']
+      namespaces = ['xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"']
 
       if (boolify(interpolated['ns_media']))
         namespaces << 'xmlns:media="http://search.yahoo.com/mrss/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"'
